@@ -2,6 +2,7 @@
 #define GAMEWINDOW_H
 
 #include <QDialog>
+#include "map.h"
 
 namespace Ui {
 class GameWindow;
@@ -17,6 +18,7 @@ public:
 
 private:
     Ui::GameWindow *ui;
+    QGraphicsScene *scene;
 };
 
 #endif // GAMEWINDOW_H
