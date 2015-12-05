@@ -1,5 +1,6 @@
 #include "startscreen.h"
 #include "ui_startscreen.h"
+#include "gamewindow.h"
 
 StartScreen::StartScreen(QWidget *parent) :
     QDialog(parent),
@@ -11,4 +12,10 @@ StartScreen::StartScreen(QWidget *parent) :
 StartScreen::~StartScreen()
 {
     delete ui;
+}
+
+void StartScreen::on_Button_StartGame_clicked()
+{
+    GameWindow *GameW = new GameWindow;
+    GameW->show();
 }

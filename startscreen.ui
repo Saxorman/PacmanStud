@@ -1,20 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>StartScreen</class>
- <widget class="QDialog" name="StartScreen" >
-  <property name="geometry" >
+ <widget class="QDialog" name="StartScreen">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>447</width>
+    <height>330</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="windowTitle">
    <string>StartScreen</string>
   </property>
+  <widget class="QPushButton" name="Button_StartGame">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>150</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Let's Play!</string>
+   </property>
+  </widget>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
+ <layoutdefault spacing="6" margin="11"/>
  <resources/>
  <connections/>
 </ui>

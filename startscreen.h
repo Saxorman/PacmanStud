@@ -15,6 +15,9 @@ public:
     explicit StartScreen(QWidget *parent = 0);
     ~StartScreen();
 
+private slots:
+    void on_Button_StartGame_clicked();
+
 private:
     Ui::StartScreen *ui;
 };
