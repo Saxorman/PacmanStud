@@ -15,11 +15,13 @@ TEMPLATE = app
 SOURCES += main.cpp\
         startscreen.cpp \
     map.cpp \
-    gamewindow.cpp
+    gamewindow.cpp \
+    pacman.cpp
 
 HEADERS  += startscreen.h \
     map.h \
-    gamewindow.h
+    gamewindow.h \
+    pacman.h
 
 FORMS    += startscreen.ui \
     gamewindow.ui
