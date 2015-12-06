@@ -18,4 +18,5 @@ void StartScreen::on_Button_StartGame_clicked()
 {
     GameWindow *GameW = new GameWindow;
     GameW->show();
+    this->close();
 }

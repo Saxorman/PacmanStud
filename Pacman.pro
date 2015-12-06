@@ -25,3 +25,7 @@ HEADERS  += startscreen.h \
 
 FORMS    += startscreen.ui \
     gamewindow.ui
+
+RESOURCES += \
+    images.qrc
+
