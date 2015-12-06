@@ -13,13 +13,15 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        startscreen.cpp \
     map.cpp \
-    gamewindow.cpp
+    gamewindow.cpp \
+    highscores.cpp
 
-HEADERS  += startscreen.h \
+HEADERS  += \
     map.h \
-    gamewindow.h
+    gamewindow.h \
+    highscores.h
 
-FORMS    += startscreen.ui \
-    gamewindow.ui
+FORMS    += \
+    gamewindow.ui \
+    highscores.ui

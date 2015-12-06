@@ -16,6 +16,13 @@ public:
     explicit GameWindow(QWidget *parent = 0);
     ~GameWindow();
 
+private slots:
+    void on_start_button_2_clicked();
+
+    void on_stop_button_clicked();
+
+    void on_pushButton_clicked();
+
 private:
     Ui::GameWindow *ui;
     QGraphicsScene *scene;
