@@ -3,6 +3,8 @@
 
 #include <QDialog>
 #include "map.h"
+#include "eat.h"
+#include "bonus.h"
 
 namespace Ui {
 class GameWindow;
@@ -15,6 +17,9 @@ class GameWindow : public QDialog
 public:
     explicit GameWindow(QWidget *parent = 0);
     ~GameWindow();
+    Map *map_p;
+    Eat *eat;
+    Bonus *bonus;
 
 private slots:
     void on_start_button_2_clicked();

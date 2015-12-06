@@ -1,5 +1,5 @@
-#ifndef HIGHSCORES
-#define HIGHSCORES
+#ifndef HIGHSCORES_H
+#define HIGHSCORES_H
 
 #include <QDialog>
 

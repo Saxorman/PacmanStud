@@ -15,13 +15,20 @@ TEMPLATE = app
 SOURCES += main.cpp\
     map.cpp \
     gamewindow.cpp \
-    highscores.cpp
+    highscores.cpp \
+    eat.cpp \
+    bonus.cpp
 
 HEADERS  += \
     map.h \
     gamewindow.h \
-    highscores.h
+    highscores.h \
+    eat.h \
+    bonus.h
 
 FORMS    += \
     gamewindow.ui \
     highscores.ui
+
+RESOURCES += \
+    images.qrc
