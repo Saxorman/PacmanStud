@@ -13,21 +13,26 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        startscreen.cpp \
     map.cpp \
     gamewindow.cpp \
     pacman.cpp \
-    ghost.cpp
+    ghost.cpp\
+    highscores.cpp \
+    eat.cpp \
+    bonus.cpp
 
-HEADERS  += startscreen.h \
+HEADERS  += \
     map.h \
     gamewindow.h \
     pacman.h \
-    ghost.h
+    ghost.h\
+    highscores.h \
+    eat.h \
+    bonus.h
 
 FORMS    += startscreen.ui \
-    gamewindow.ui
+    gamewindow.ui\
+    highscores.ui
 
 RESOURCES += \
     images.qrc
-

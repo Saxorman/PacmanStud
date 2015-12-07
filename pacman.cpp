@@ -8,10 +8,10 @@ pacman::pacman()
     y=10;
     height = 23;
     width = 23;
-    animation = 4;
+    animation = 0;
 
 // This will load pacman images
-    direction=4;
+    direction=0;
    // pac = new QPixmap;
     SkinDown.load(":/images/pacDown.png");
     SkinUp.load(":/images/pacUp.png");
