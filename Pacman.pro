@@ -16,12 +16,14 @@ SOURCES += main.cpp\
         startscreen.cpp \
     map.cpp \
     gamewindow.cpp \
-    pacman.cpp
+    pacman.cpp \
+    ghost.cpp
 
 HEADERS  += startscreen.h \
     map.h \
     gamewindow.h \
-    pacman.h
+    pacman.h \
+    ghost.h
 
 FORMS    += startscreen.ui \
     gamewindow.ui

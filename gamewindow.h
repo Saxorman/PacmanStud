@@ -7,6 +7,7 @@
 #include <QGraphicsScene>
 #include "map.h"
 #include "pacman.h"
+#include "ghost.h"
 #include <QKeyEvent>
 
 
@@ -20,6 +21,7 @@ class GameWindow : public QDialog
 
 public:
     pacman *PACMAN;
+    ghost *GHOST_1, *GHOST_2, *GHOST_3, *GHOST_4;
     explicit GameWindow(QWidget *parent = 0);
     ~GameWindow();
 

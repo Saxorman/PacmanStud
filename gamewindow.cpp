@@ -8,7 +8,8 @@ GameWindow::GameWindow(QWidget *parent) :
     ui(new Ui::GameWindow)
 {
     ui->setupUi(this);
-    //инициализация сцены
+    /////////////@@///////////////инициализация сцены
+    /////////////@@///////////////Zamyatin
     scene = new QGraphicsScene(this);
     ui->graphicsView->setScene(scene);
     ui->graphicsView->setRenderHint(QPainter::Antialiasing);
@@ -18,13 +19,19 @@ GameWindow::GameWindow(QWidget *parent) :
     ui->graphicsView->setSceneRect(scene->sceneRect());
 
     PACMAN = new pacman;
-    scene->addItem(PACMAN);
+//    GHOST_1 = new ghost;
+
+
+    scene->addItem(GHOST_1);
+ //   scene->addItem(PACMAN);
 
     ui->graphicsView->show();
     timer = new QTimer(this);
     connect(timer,SIGNAL(timeout()),this, SLOT(update()));
     moving = false;
     timer->start(60);
+    /////////////@@////////////////
+    /////////////@@////////////////
 }
 
 GameWindow::~GameWindow()
