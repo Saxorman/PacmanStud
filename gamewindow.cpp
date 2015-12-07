@@ -19,11 +19,11 @@ GameWindow::GameWindow(QWidget *parent) :
     ui->graphicsView->setSceneRect(scene->sceneRect());
 
     PACMAN = new pacman;
-//    GHOST_1 = new ghost;
+    GHOST_1 = new ghost;
 
 
     scene->addItem(GHOST_1);
- //   scene->addItem(PACMAN);
+    scene->addItem(PACMAN);
 
     ui->graphicsView->show();
     timer = new QTimer(this);
