@@ -28,6 +28,9 @@ public:
     Map *map_p;
     Eat *eat;
     Bonus *bonus;
+    QTimer *timer;
+    bool moving;
+    void pacman_move();
 
 private slots:
     void on_start_button_2_clicked();
@@ -36,11 +39,6 @@ private slots:
 
     void on_pushButton_clicked();
 
-    QTimer *timer;
-
-
-    bool moving;
-    void pacman_move();
 
 public slots:
     void update();

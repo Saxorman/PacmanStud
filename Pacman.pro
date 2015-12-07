@@ -30,7 +30,7 @@ HEADERS  += \
     eat.h \
     bonus.h
 
-FORMS    += startscreen.ui \
+FORMS    += \
     gamewindow.ui\
     highscores.ui
 

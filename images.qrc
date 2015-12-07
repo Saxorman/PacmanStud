@@ -1,12 +1,9 @@
 <RCC>
     <qresource prefix="/">
-<<<<<<< HEAD
+        <file>images/pac_map.png</file>
         <file>images/pacDown.png</file>
         <file>images/pacLeft.png</file>
         <file>images/pacRight.png</file>
         <file>images/pacUp.png</file>
-=======
-        <file>images/pac_map.png</file>
->>>>>>> Basyuk
     </qresource>
 </RCC>
