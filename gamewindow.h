@@ -29,8 +29,12 @@ public:
     Eat *eat;
     Bonus *bonus;
     QTimer *timer;
+    int time;
     bool moving;
+    bool game;
+
     void pacman_move();
+    void check();
 
 private slots:
     void on_start_button_2_clicked();
@@ -39,6 +43,9 @@ private slots:
 
     void on_pushButton_clicked();
 
+    void on_pause_button_clicked();
+
+    void on_start_button_clicked();
 
 public slots:
     void update();

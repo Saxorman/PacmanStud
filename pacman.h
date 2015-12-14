@@ -21,7 +21,7 @@ public:
     void SetDeath(int);//установка "смерти"
     bool deadBool;//флаг смерти пакмана
 
-    QPixmap SkinLeft,SkinRight,SkinUp,SkinDown;//картинка
+    QPixmap SkinLeft,SkinRight,SkinUp,SkinDown, SkinLeft2,SkinRight2,SkinUp2,SkinDown2;//картинка
 
     int Pacman_X,Pacman_Y,x,y,height,width;//координаты пакмана, его высота и ширина
     int direction;//направление

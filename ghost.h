@@ -18,7 +18,7 @@ public:
     void SetGhost_X(int x);//установка координаты X
     void SetGhost_Y(int y);//установка координаты Y
 
-    QPixmap SkinGhost;
+    QPixmap SkinGhost1,SkinGhost2,SkinGhost3,SkinGhost4;
     int ghost_X,ghost_Y, x, y, height,width;
 };
 

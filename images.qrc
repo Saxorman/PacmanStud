@@ -2,8 +2,21 @@
     <qresource prefix="/">
         <file>images/pac_map.png</file>
         <file>images/pacDown.png</file>
+        <file>images/pacdown1.png</file>
+        <file>images/pacdown2.png</file>
         <file>images/pacLeft.png</file>
+        <file>images/pacleft1.png</file>
+        <file>images/pacleft2.png</file>
         <file>images/pacRight.png</file>
+        <file>images/pacright1.png</file>
+        <file>images/pacright2.png</file>
+        <file>images/pacround.png</file>
         <file>images/pacUp.png</file>
+        <file>images/pacup1.png</file>
+        <file>images/pacup2.png</file>
+        <file>images/ghostleft1.png</file>
+        <file>images/ghostleftblue1.png</file>
+        <file>images/ghostleftorange1.png</file>
+        <file>images/ghostleftred1.png</file>
     </qresource>
 </RCC>

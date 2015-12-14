@@ -10,13 +10,16 @@ pacman::pacman()
     width = 23;
     animation = 0;
 
-// This will load pacman images
-    direction=0;
+    direction=1;
    // pac = new QPixmap;
-    SkinDown.load(":/images/pacDown.png");
-    SkinUp.load(":/images/pacUp.png");
-    SkinLeft.load(":/images/pacLeft.png");
-    SkinRight.load(":/images/pacRight.png");
+    SkinDown.load(":/images/pacdown1.png");
+    SkinDown2.load(":/images/pacdown2.png");
+    SkinUp.load(":/images/pacup1.png");
+    SkinUp2.load(":/images/pacup2.png");
+    SkinLeft.load(":/images/pacleft1.png");
+    SkinLeft2.load(":/images/pacleft2.png");
+    SkinRight.load(":/images/pacright1.png");
+    SkinRight2.load(":/images/pacright2.png");
 }
 
 QRectF pacman::boundingRect() const
@@ -28,16 +31,44 @@ void pacman::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QW
 {
     switch(direction){
         case 1://влево
-            painter->drawPixmap(Pacman_X,Pacman_Y,height,width,SkinLeft);
+            if(animation < 1)
+                painter->drawPixmap(Pacman_X,Pacman_Y,height,width,SkinLeft);
+            else
+            {
+                painter->drawPixmap(Pacman_X,Pacman_Y,height,width,SkinLeft2);
+                if(animation == 2)
+                animation = -2;
+            }
             break;
         case 4://вправо
+        if(animation < 1)
             painter->drawPixmap(Pacman_X,Pacman_Y,height,width,SkinRight);
+        else
+        {
+            painter->drawPixmap(Pacman_X,Pacman_Y,height,width,SkinRight2);
+            if(animation == 2)
+            animation = -2;
+        }
             break;
         case 3://вниз
+        if(animation < 1)
             painter->drawPixmap(Pacman_X,Pacman_Y,height,width,SkinDown);
+        else
+        {
+            painter->drawPixmap(Pacman_X,Pacman_Y,height,width,SkinDown2);
+            if(animation == 2)
+            animation = -2;
+        }
             break;
         case 2://вверх
+        if(animation < 1)
             painter->drawPixmap(Pacman_X,Pacman_Y,height,width,SkinUp);
+        else
+        {
+            painter->drawPixmap(Pacman_X,Pacman_Y,height,width,SkinUp2);
+            if(animation == 2)
+            animation = -2;
+        }
             break;
     }
 }
